@@ -5,7 +5,7 @@
    <parent>
       <artifactId>ciint</artifactId>
       <groupId>com.nhantran.demo</groupId>
-      <version>0.0.1-SNAPSHOT</version>
+      <version>0.0.1</version>
    </parent>
 
    <artifactId>ciint-ear</artifactId>
@@ -42,7 +42,7 @@
                   are in easy way to package any libraries needed in the ear, and automatically 
                   have any modules (EJB-JARs and WARs) use them -->
                <defaultLibBundleDir>lib</defaultLibBundleDir>
-               <modules></modules>
+               <modules />
             </configuration>
          </plugin>
          <!-- The JBoss AS plugin deploys your ear to a local JBoss AS container -->
