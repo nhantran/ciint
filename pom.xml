@@ -8,6 +8,12 @@
     <packaging>pom</packaging>
     <name>ciint application</name>
 
+	<scm>
+		<url>http://github.com/nhantran/ciint.git</url>
+		<connection>scm:git:git@github.com:nhantran/ciint.git</connection>
+		<developerConnection>scm:git:git@github.com:nhantran/ciint.git</developerConnection>
+	</scm>
+
     <modules>
         <module>ciint-ejb</module>
         <module>ciint-web</module>
@@ -105,8 +111,21 @@
                         <skip>true</skip>
                     </configuration>
                 </plugin>
+                <plugin>
+          <artifactId>maven-release-plugin</artifactId>
+          <version>2.2</version>
+        </plugin>
             </plugins>
         </pluginManagement>
+        
+        <extensions>
+	      <extension>
+	        <groupId>org.apache.maven.wagon</groupId> 
+	        <artifactId>wagon-ssh</artifactId> 
+	        <version>1.0-beta-6</version> 
+	      </extension> 
+	    </extensions>
+	    
     </build>
 
 </project>
