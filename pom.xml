@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.nhantran.demo</groupId>
     <artifactId>ciint</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>ciint application</name>
 
@@ -43,7 +43,7 @@
             <dependency>
                 <groupId>com.nhantran.demo</groupId>
                 <artifactId>ciint-ejb</artifactId>
-                <version>0.0.1</version>
+                <version>${project.version}</version>
                 <type>ejb</type>
             </dependency>
 
@@ -52,7 +52,7 @@
             <dependency>
                 <groupId>com.nhantran.demo</groupId>
                 <artifactId>ciint-web</artifactId>
-                <version>0.0.1</version>
+                <version>${project.version}</version>
                 <type>war</type>
                 <scope>compile</scope>
             </dependency>
