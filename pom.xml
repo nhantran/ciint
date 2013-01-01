@@ -118,21 +118,13 @@
             </plugins>
         </pluginManagement>
         
-        <extensions>
-	      <extension>
-	        <groupId>org.apache.maven.wagon</groupId> 
-	        <artifactId>wagon-ssh</artifactId> 
-	        <version>1.0-beta-6</version> 
-	      </extension> 
-	    </extensions>
-	    
     </build>
 
   <distributionManagement>
     <repository>
-      <id>demo-repository</id>
+      <id>demorepo</id>
       <name>My Demo Repository</name>
-      <url>scp://192.168.1.16/artifactory/libs-release</url> 
+      <url>http://192.168.1.16/artifactory/libs-release</url> 
     </repository>
   </distributionManagement> 
 </project>
